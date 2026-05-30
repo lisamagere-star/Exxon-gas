@@ -1,0 +1,503 @@
+<html class="light" lang="en"><head></head><body class="bg-surface text-on-surface font-body-md overflow-x-hidden">
+
+
+
+    <meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Exxon Gas Narok | Fast Gas Delivery</title>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                "on-tertiary-container": "#2f3132",
+                "primary-fixed": "#ffdbcc",
+                "tertiary-fixed-dim": "#c5c7c8",
+                "primary": "#a04100",
+                "on-tertiary-fixed-variant": "#454748",
+                "on-secondary-container": "#294f83",
+                "on-error": "#ffffff",
+                "on-primary-fixed": "#351000",
+                "surface-container-low": "#f1f4f9",
+                "on-surface": "#181c20",
+                "inverse-surface": "#2d3135",
+                "secondary-fixed-dim": "#a7c8ff",
+                "on-primary-fixed-variant": "#7a3000",
+                "on-secondary": "#ffffff",
+                "on-tertiary-fixed": "#191c1d",
+                "secondary-container": "#9fc2fe",
+                "outline-variant": "#e2bfb0",
+                "surface-tint": "#a04100",
+                "on-primary": "#ffffff",
+                "surface-container-high": "#e5e8ee",
+                "surface-bright": "#f7f9ff",
+                "on-background": "#181c20",
+                "background": "#f7f9ff",
+                "secondary-fixed": "#d5e3ff",
+                "outline": "#8e7164",
+                "secondary": "#3a5f94",
+                "inverse-primary": "#ffb693",
+                "surface-container-highest": "#e0e3e8",
+                "primary-container": "#ff6b00",
+                "tertiary": "#5c5f60",
+                "surface": "#f7f9ff",
+                "tertiary-fixed": "#e1e3e4",
+                "surface-container-lowest": "#ffffff",
+                "primary-fixed-dim": "#ffb693",
+                "on-secondary-fixed": "#001b3c",
+                "error": "#ba1a1a",
+                "inverse-on-surface": "#eef1f6",
+                "tertiary-container": "#97999a",
+                "on-error-container": "#93000a",
+                "on-primary-container": "#572000",
+                "on-tertiary": "#ffffff",
+                "error-container": "#ffdad6",
+                "on-secondary-fixed-variant": "#1f477b",
+                "surface-container": "#ebeef3",
+                "surface-dim": "#d7dadf",
+                "on-surface-variant": "#5a4136",
+                "surface-variant": "#e0e3e8"
+            },
+            "borderRadius": {
+                "DEFAULT": "0.25rem",
+                "lg": "0.5rem",
+                "xl": "0.75rem",
+                "full": "9999px"
+            },
+            "spacing": {
+                "xl": "48px",
+                "sm": "12px",
+                "md": "16px",
+                "base": "8px",
+                "lg": "24px",
+                "gutter": "24px",
+                "xs": "4px",
+                "container-max": "1280px"
+            },
+            "fontFamily": {
+                "body-md": ["Inter"],
+                "headline-lg": ["Montserrat"],
+                "headline-md": ["Montserrat"],
+                "headline-lg-mobile": ["Montserrat"],
+                "body-lg": ["Inter"],
+                "caption": ["Inter"],
+                "display": ["Montserrat"],
+                "label-md": ["Inter"]
+            },
+            "fontSize": {
+                "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                "headline-lg": ["32px", {"lineHeight": "40px", "fontWeight": "700"}],
+                "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                "headline-lg-mobile": ["28px", {"lineHeight": "36px", "fontWeight": "700"}],
+                "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                "caption": ["12px", {"lineHeight": "16px", "fontWeight": "400"}],
+                "display": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                "label-md": ["14px", {"lineHeight": "20px", "fontWeight": "600"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .hero-gradient {
+            background: linear-gradient(to right, rgba(247, 249, 255, 0.95) 30%, rgba(247, 249, 255, 0.4) 100%);
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+        .whatsapp-float {
+            position: fixed;
+            bottom: 40px;
+            right: 40px;
+            z-index: 100;
+        }
+        @media (max-width: 768px) {
+            .whatsapp-float {
+                bottom: 80px;
+                right: 20px;
+            }
+        }
+        .modal-active {
+            overflow: hidden;
+        }
+    </style>
+<!-- TopNavBar -->
+<nav class="w-full sticky top-0 z-50 bg-surface dark:bg-on-background shadow-sm h-20">
+<div class="flex justify-between items-center px-gutter max-w-container-max mx-auto h-full">
+<div class="text-headline-md font-display font-bold text-primary dark:text-primary-container">
+            Exxon Gas
+        </div>
+<div class="hidden md:flex items-center space-x-lg">
+<a class="text-primary dark:text-primary-fixed border-b-2 border-primary font-bold pb-1 font-label-md text-label-md" href="#">Home</a>
+<a class="text-on-surface-variant dark:text-tertiary-fixed-dim font-label-md text-label-md hover:text-primary-container transition-colors duration-200" href="#">Products</a>
+<a class="text-on-surface-variant dark:text-tertiary-fixed-dim font-label-md text-label-md hover:text-primary-container transition-colors duration-200" href="#">Accessories</a>
+<a class="text-on-surface-variant dark:text-tertiary-fixed-dim font-label-md text-label-md hover:text-primary-container transition-colors duration-200" href="#">About Us</a>
+</div>
+<div class="flex items-center gap-md">
+<!-- Cart Icon -->
+<button class="relative p-base text-on-surface hover:text-primary transition-colors" id="cartBtn">
+<span class="material-symbols-outlined">shopping_cart</span>
+<span class="absolute -top-1 -right-1 bg-primary text-white text-[10px] w-5 h-5 flex items-center justify-center rounded-full font-bold" id="cartCount">0</span>
+</button>
+<a class="hidden sm:inline-block bg-primary-container text-on-primary-container px-lg py-sm rounded-lg font-label-md text-label-md font-bold hover:opacity-90 active:scale-95 transition-all shadow-md text-center" href="https://wa.me/254711871765" target="_blank">Order on WhatsApp</a>
+<button class="md:hidden text-on-surface p-base">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</div>
+</nav>
+<!-- Hero Section -->
+<header class="relative w-full min-h-[85vh] flex items-center overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img alt="Modern kitchen with high-end appliances" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBEjX9_VaH99zBl10xCZkBiIyguDNgZwGrD-uRCvfZ3cuxZ0H3IT9A3h7BPZjf1QkOJ9O2TeIMp1wo2edMPzuIW8qGP17yGNdQskFwePHepr5a6AkP094H5GxYv-qXPBeyFPL2vdMLCam1df_hqXq_452O71FzvrRT7EIq3CslABm0J-qIHxfqNI_vWYOox8bazNSQWBq5QuoYSY5XMQYqvzYZUua_qu_FhfnZ05Mr_BAZdv2zw89A5TsyIMUQNZAdxh6iJ1prxxWY"/>
+<div class="absolute inset-0 hero-gradient"></div>
+</div>
+<div class="relative z-10 max-w-container-max mx-auto px-gutter w-full">
+<div class="max-w-2xl">
+<span class="inline-block px-md py-xs bg-primary-fixed text-on-primary-fixed rounded-full font-label-md text-label-md mb-md">
+                Serving Narok County
+            </span>
+<h1 class="font-display text-display leading-tight mb-md text-on-surface">
+                Free Cooking Gas Delivery in Narok
+            </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-xl max-w-lg">
+                35-minute delivery at your doorstep. Fast, Secure, and Reliable cooking gas solutions for your home.
+            </p>
+<div class="flex flex-col sm:flex-row gap-md">
+<a class="bg-primary-container text-on-primary-container px-xl py-md rounded-xl font-label-md text-label-md font-bold text-lg hover:shadow-lg hover:shadow-primary/20 transition-all flex items-center justify-center gap-base" href="https://wa.me/254711871765" target="_blank">
+                    Order on WhatsApp <svg class="w-6 h-6 fill-current" viewbox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.1 0-65.6-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-5.5-2.8-23.2-8.5-44.2-27.1-16.4-14.6-27.4-32.7-30.6-38.2-3.2-5.5-.3-8.5 2.4-11.2 2.5-2.6 5.5-6.5 8.3-9.7 2.8-3.3 3.7-5.5 5.5-9.2 1.9-3.7 .9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 13.2 5.7 23.5 9.2 31.6 11.8 13.3 4.2 25.4 3.6 35 2.2 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"></path></svg>
+</a>
+<button class="border-2 border-secondary text-secondary px-xl py-md rounded-xl font-label-md text-label-md font-bold text-lg hover:bg-secondary/5 transition-all">
+                    View Price List
+                </button>
+</div>
+</div>
+</div>
+</header>
+<!-- Floating WhatsApp Button -->
+<a class="whatsapp-float bg-[#25D366] text-white p-4 rounded-full shadow-2xl hover:scale-110 transition-transform flex items-center justify-center" href="https://wa.me/254711871765" target="_blank">
+<svg class="w-8 h-8 fill-current" viewbox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.1 0-65.6-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-5.5-2.8-23.2-8.5-44.2-27.1-16.4-14.6-27.4-32.7-30.6-38.2-3.2-5.5-.3-8.5 2.4-11.2 2.5-2.6 5.5-6.5 8.3-9.7 2.8-3.3 3.7-5.5 5.5-9.2 1.9-3.7 .9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 13.2 5.7 23.5 9.2 31.6 11.8 13.3 4.2 25.4 3.6 35 2.2 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"></path></svg>
+</a>
+<!-- Value Propositions -->
+<section class="bg-surface py-md">
+<div class="max-w-container-max mx-auto px-gutter">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-lg">
+<!-- Speed -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm border border-outline-variant/30 hover:shadow-md transition-shadow p-md">
+<div class="bg-primary-fixed rounded-full flex items-center justify-center mb-md w-12 h-12">
+<span class="material-symbols-outlined text-primary text-3xl">timer</span>
+</div>
+<h3 class="font-headline-md text-headline-md mb-sm">35 Minute Delivery</h3>
+<p class="text-on-surface-variant font-body-md text-body-md">We value your time. Our fleet is strategically located across Narok to ensure rapid response times.</p>
+</div>
+<!-- Safety -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm border border-outline-variant/30 hover:shadow-md transition-shadow p-md">
+<div class="bg-secondary-fixed rounded-full flex items-center justify-center mb-md w-12 h-12">
+<span class="material-symbols-outlined text-secondary text-3xl" style="font-variation-settings: 'FILL' 1;">verified_user</span>
+</div>
+<h3 class="font-headline-md text-headline-md mb-sm">Secure &amp; Safe</h3>
+<p class="text-on-surface-variant font-body-md text-body-md">Every cylinder undergoes a rigorous 5-point safety check before delivery to your home.</p>
+</div>
+<!-- Reliability -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm border border-outline-variant/30 hover:shadow-md transition-shadow p-md">
+<div class="bg-tertiary-fixed rounded-full flex items-center justify-center mb-md w-12 h-12">
+<span class="material-symbols-outlined text-tertiary text-3xl">handshake</span>
+</div>
+<h3 class="font-headline-md text-headline-md mb-sm">Reliable Service</h3>
+<p class="text-on-surface-variant font-body-md text-body-md">The most trusted gas provider in Narok. We guarantee weight and quality with every refill.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Gas Brands -->
+<section class="bg-surface-container-low overflow-hidden py-lg">
+<div class="max-w-container-max mx-auto px-gutter text-center mb-md">
+<h2 class="font-headline-lg text-headline-lg mb-md">Popular Gas Brands</h2>
+<p class="text-on-surface-variant font-body-md text-body-md max-w-2xl mx-auto">We stock all major Kenyan brands to ensure you never have to switch your regulator.</p>
+</div>
+<div class="flex flex-wrap justify-center items-center gap-xl opacity-80 grayscale hover:grayscale-0 transition-all duration-500 px-gutter"><div class="flex flex-col items-center gap-sm group"><div class="w-24 h-24 rounded-full bg-white shadow-sm flex items-center justify-center group-hover:scale-110 transition-transform"><span class="font-display font-bold text-primary">Pro Gas</span></div><span class="font-label-md text-label-md">Pro Gas</span></div><div class="flex flex-col items-center gap-sm group"><div class="w-24 h-24 rounded-full bg-white shadow-sm flex items-center justify-center group-hover:scale-110 transition-transform"><span class="font-display font-bold text-secondary">Afri Gas</span></div><span class="font-label-md text-label-md">Afri Gas</span></div><div class="flex flex-col items-center gap-sm group"><div class="w-24 h-24 rounded-full bg-white shadow-sm flex items-center justify-center group-hover:scale-110 transition-transform"><span class="font-display font-bold text-on-surface">Mpishi</span></div><span class="font-label-md text-label-md">Mpishi</span></div></div>
+</section>
+<!-- Gas Essentials/Accessories -->
+<section class="py-xl">
+<div class="max-w-container-max mx-auto px-gutter">
+<div class="flex flex-col md:flex-row justify-between items-end mb-xl gap-md">
+<div>
+<h2 class="font-headline-lg text-headline-lg mb-sm">Gas Essentials</h2>
+<p class="text-on-surface-variant font-body-md text-body-md">Complete your kitchen setup with our premium accessories.</p>
+</div>
+<a class="text-primary font-label-md text-label-md flex items-center gap-xs border-b border-primary" href="#">
+                View All Accessories <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-lg" id="productGrid">
+<!-- Accessory 1 -->
+<div class="product-card group bg-surface rounded-xl overflow-hidden border border-outline-variant/20 hover:border-primary-container transition-all flex flex-col h-full" data-description="A durable, industrial-grade metal stand equipped with heavy-duty rollers. Designed for easy movement of 6kg and 13kg gas cylinders. Prevents floor rust and scratches." data-id="1" data-name="Heavy-Duty Metal Stand" data-price="1200">
+<div class="h-48 bg-surface-container-high relative overflow-hidden cursor-pointer product-img-trigger">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDCrt-Ircm0xNhhmxUPYnEL4hVZyfalouWGt0ASlynaDfp_HimctgGMhCVfRS7NARy739e08MFIGqE3AbscvCskCYyfHByapCE8cREg3zUnevH3PX4l0YBhwtLLovlhQdjCUlvi1xGKjVhORVSM2zJPXFCnFdcNQCfXpYrD056cBS0vv5-MzkAoEtJTkYvxgb-g6AiQ_Dcmof5g05OfHZlqhoMxX2d4NzzhBhHC7ZywQI3kz_BOmarwYi5BbNJ25zPJFLKzwy5PxZE"/>
+<span class="absolute top-md right-md bg-secondary text-on-secondary text-caption px-sm py-xs rounded-full font-bold">New</span>
+</div>
+<div class="p-md flex flex-col flex-grow">
+<h4 class="font-label-md text-label-md mb-xs">Heavy-Duty Metal Stand</h4>
+<div class="flex items-center justify-between mb-md">
+<span class="text-primary font-bold">KES 1,200</span>
+<div class="flex gap-xs">
+<button class="w-8 h-8 bg-surface-container rounded-full flex items-center justify-center hover:bg-primary-container hover:text-white transition-colors add-to-cart-btn" title="Add to Cart">
+<span class="material-symbols-outlined text-sm">add_shopping_cart</span>
+</button>
+</div>
+</div>
+<div class="mt-auto space-y-sm">
+<button class="w-full py-sm bg-surface-container-high text-on-surface font-label-md text-label-md rounded-lg hover:bg-surface-container-highest transition-colors product-details-btn">View Details</button>
+<a class="w-full py-sm bg-green-500 text-white font-label-md text-label-md rounded-lg hover:bg-green-600 transition-colors flex items-center justify-center gap-xs" href="https://wa.me/254711871765?text=I'd%20like%20to%20order%20Heavy-Duty%20Metal%20Stand" target="_blank">
+<svg class="w-4 h-4 fill-current" viewbox="0 0 448 512"><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.1 0-65.6-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-5.5-2.8-23.2-8.5-44.2-27.1-16.4-14.6-27.4-32.7-30.6-38.2-3.2-5.5-.3-8.5 2.4-11.2 2.5-2.6 5.5-6.5 8.3-9.7 2.8-3.3 3.7-5.5 5.5-9.2 1.9-3.7 .9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 13.2 5.7 23.5 9.2 31.6 11.8 13.3 4.2 25.4 3.6 35 2.2 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"></path></svg>
+                            Order on WhatsApp
+                        </a>
+</div>
+</div>
+</div>
+<!-- Accessory 2 -->
+<div class="product-card group bg-surface rounded-xl overflow-hidden border border-outline-variant/20 hover:border-primary-container transition-all flex flex-col h-full" data-description="High-quality reinforced rubber gas hose. 1.5 meters long, UV resistant, and designed to withstand high pressure. Safety certified for home kitchen use." data-id="2" data-name="Reinforced Delivery Pipe" data-price="450">
+<div class="h-48 bg-surface-container-high relative overflow-hidden cursor-pointer product-img-trigger">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBs1Ej3GxWqAHUtT1XIhswaqvpFS-SJ4iLkY2zVqbXgi58F_x5ZQkurQ1YDBBokG3lPIs_37EDkMxiu1fzrOgQD617Q9q54Hsw3GSYlXeGo3Bmh28BpmD0qMjiqompMPl0Q_VzcIl0-FIicWsyOjfa594o19FTH0Apkyx-460HlVYKG50wiadGlp931JfC4-MsgT8Fb1kBDeuCrgR265MUH69MZULXe84XgBWS3uKK0FV-109HZGn3s2hVGYMZ-03adQZWe80uYrd8"/>
+</div>
+<div class="p-md flex flex-col flex-grow">
+<h4 class="font-label-md text-label-md mb-xs">Reinforced Delivery Pipe</h4>
+<div class="flex items-center justify-between mb-md">
+<span class="text-primary font-bold">KES 450</span>
+<div class="flex gap-xs">
+<button class="w-8 h-8 bg-surface-container rounded-full flex items-center justify-center hover:bg-primary-container hover:text-white transition-colors add-to-cart-btn" title="Add to Cart">
+<span class="material-symbols-outlined text-sm">add_shopping_cart</span>
+</button>
+</div>
+</div>
+<div class="mt-auto space-y-sm">
+<button class="w-full py-sm bg-surface-container-high text-on-surface font-label-md text-label-md rounded-lg hover:bg-surface-container-highest transition-colors product-details-btn">View Details</button>
+<a class="w-full py-sm bg-green-500 text-white font-label-md text-label-md rounded-lg hover:bg-green-600 transition-colors flex items-center justify-center gap-xs" href="https://wa.me/254711871765?text=I'd%20like%20to%20order%20Reinforced%20Delivery%20Pipe" target="_blank">
+                            Order on WhatsApp
+                        </a>
+</div>
+</div>
+</div>
+<!-- Accessory 3 -->
+<div class="product-card group bg-surface rounded-xl overflow-hidden border border-outline-variant/20 hover:border-primary-container transition-all flex flex-col h-full" data-description="Magnetic gas level indicator that shows you exactly how much gas is left in your cylinder. No more surprise run-outs while cooking. Simple to install and reuse." data-id="3" data-name="Level Indicator Gauge" data-price="1800">
+<div class="h-48 bg-surface-container-high relative overflow-hidden cursor-pointer product-img-trigger">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAjqW6ZPs8bn3_RYdeGxEJbHmSTVnRZdydJLHBLZu7vdcEBtBFizOmhPX5vYkqa0lpPoMuizAvxGCMB6bti6N1STN7YZJ1jIsJDOEpmIp-vksNM_nBX4a9z4aekjhnY_0qBTTDRFpE1GhwX357RLl3j0Sn4_JXe-uZnwvrtauqK4JyVslOzXjz3qHIJLB2zg7fWKrO_0JIle1MEvqsiv--k-sJvjT522UnfZAxSiFIPgubwqQhPTmbILpm8z5_0HHLN0YUIkoBwyTM"/>
+</div>
+<div class="p-md flex flex-col flex-grow">
+<h4 class="font-label-md text-label-md mb-xs">Level Indicator Gauge</h4>
+<div class="flex items-center justify-between mb-md">
+<span class="text-primary font-bold">KES 1,800</span>
+<div class="flex gap-xs">
+<button class="w-8 h-8 bg-surface-container rounded-full flex items-center justify-center hover:bg-primary-container hover:text-white transition-colors add-to-cart-btn" title="Add to Cart">
+<span class="material-symbols-outlined text-sm">add_shopping_cart</span>
+</button>
+</div>
+</div>
+<div class="mt-auto space-y-sm">
+<button class="w-full py-sm bg-surface-container-high text-on-surface font-label-md text-label-md rounded-lg hover:bg-surface-container-highest transition-colors product-details-btn">View Details</button>
+<a class="w-full py-sm bg-green-500 text-white font-label-md text-label-md rounded-lg hover:bg-green-600 transition-colors flex items-center justify-center gap-xs" href="https://wa.me/254711871765?text=I'd%20like%20to%20order%20Level%20Indicator%20Gauge" target="_blank">
+                            Order on WhatsApp
+                        </a>
+</div>
+</div>
+</div>
+<!-- Accessory 4: NEW - Gas Regulator -->
+<div class="product-card group bg-surface rounded-xl overflow-hidden border border-outline-variant/20 hover:border-primary-container transition-all flex flex-col h-full" data-description="Premium safety regulator with an automatic shut-off feature in case of leaks. Compatible with all standard 6kg/13kg gas cylinders. Built with high-precision brass components." data-id="4" data-name="Auto-Shutoff Gas Regulator" data-price="1500">
+<div class="h-48 bg-surface-container-high relative overflow-hidden cursor-pointer product-img-trigger">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCkG598BDbdByYI3Z4HXeIFBpcKKrdRdunEg--u359hfcDEx18b7jvg34GxGggl40Xm9ySVS5atuO8NipgrCvjjfifj6gsNkj_CMVoiwh8o94qKg6TxmJT7rmieaCTei7z90tPiBoYLt1_YAdGSdvm5uzWCsHnWYUXhCbvERl1ojVewhgaMF-j5jaBfQGZTcXKnE17kaeIlBTFK1UlvmnCQL7nssogSeNvdd_sc_y8yAc4jrsqx-F9Ax3T0Fm7Mw7yESdwYrhaiZvo"/>
+<span class="absolute top-md right-md bg-primary text-white text-caption px-sm py-xs rounded-full font-bold">Safety Top Pick</span>
+</div>
+<div class="p-md flex flex-col flex-grow">
+<h4 class="font-label-md text-label-md mb-xs">Auto-Shutoff Regulator</h4>
+<div class="flex items-center justify-between mb-md">
+<span class="text-primary font-bold">KES 1,500</span>
+<div class="flex gap-xs">
+<button class="w-8 h-8 bg-surface-container rounded-full flex items-center justify-center hover:bg-primary-container hover:text-white transition-colors add-to-cart-btn" title="Add to Cart">
+<span class="material-symbols-outlined text-sm">add_shopping_cart</span>
+</button>
+</div>
+</div>
+<div class="mt-auto space-y-sm">
+<button class="w-full py-sm bg-surface-container-high text-on-surface font-label-md text-label-md rounded-lg hover:bg-surface-container-highest transition-colors product-details-btn">View Details</button>
+<a class="w-full py-sm bg-green-500 text-white font-label-md text-label-md rounded-lg hover:bg-green-600 transition-colors flex items-center justify-center gap-xs" href="https://wa.me/254711871765?text=I'd%20like%20to%20order%20Auto-Shutoff%20Gas%20Regulator" target="_blank">
+                            Order on WhatsApp
+                        </a>
+</div>
+</div>
+</div>
+<!-- Accessory 5: NEW - Safety Clamp set -->
+<div class="product-card group bg-surface rounded-xl overflow-hidden border border-outline-variant/20 hover:border-primary-container transition-all flex flex-col h-full" data-description="Pack of 4 stainless steel jubilee clamps. Essential for securing your gas pipe to the regulator and stove. Prevents accidental hose slips and gas leaks." data-id="5" data-name="Steel Safety Clamp Set" data-price="150">
+<div class="h-48 bg-surface-container-high relative overflow-hidden cursor-pointer product-img-trigger">
+<div class="w-full h-full flex items-center justify-center bg-surface-container-high">
+<span class="material-symbols-outlined text-on-surface-variant text-5xl">build</span>
+</div>
+</div>
+<div class="p-md flex flex-col flex-grow">
+<h4 class="font-label-md text-label-md mb-xs">Steel Safety Clamp Set</h4>
+<div class="flex items-center justify-between mb-md">
+<span class="text-primary font-bold">KES 150</span>
+<div class="flex gap-xs">
+<button class="w-8 h-8 bg-surface-container rounded-full flex items-center justify-center hover:bg-primary-container hover:text-white transition-colors add-to-cart-btn" title="Add to Cart">
+<span class="material-symbols-outlined text-sm">add_shopping_cart</span>
+</button>
+</div>
+</div>
+<div class="mt-auto space-y-sm">
+<button class="w-full py-sm bg-surface-container-high text-on-surface font-label-md text-label-md rounded-lg hover:bg-surface-container-highest transition-colors product-details-btn">View Details</button>
+<a class="w-full py-sm bg-green-500 text-white font-label-md text-label-md rounded-lg hover:bg-green-600 transition-colors flex items-center justify-center gap-xs" href="https://wa.me/254711871765?text=I'd%20like%20to%20order%20Steel%20Safety%20Clamp%20Set" target="_blank">
+                            Order on WhatsApp
+                        </a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Product Detail Modal -->
+<div class="fixed inset-0 z-[60] hidden" id="productModal">
+<div class="absolute inset-0 bg-black/50 backdrop-blur-sm" id="modalOverlay"></div>
+<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-2xl px-gutter">
+<div class="bg-surface rounded-2xl overflow-hidden shadow-2xl relative">
+<button class="absolute top-md right-md z-10 w-10 h-10 bg-white/80 rounded-full flex items-center justify-center hover:bg-white transition-colors" id="closeModal">
+<span class="material-symbols-outlined">close</span>
+</button>
+<div class="flex flex-col md:flex-row">
+<div class="md:w-1/2 h-64 md:h-auto bg-surface-container-high">
+<img alt="Product Detail" class="w-full h-full object-cover" id="modalImg" src=""/>
+</div>
+<div class="p-lg md:w-1/2">
+<h3 class="font-headline-md text-headline-md mb-sm" id="modalName">Product Name</h3>
+<div class="text-primary font-bold text-xl mb-md" id="modalPrice">KES 0</div>
+<p class="text-on-surface-variant font-body-md text-body-md mb-xl" id="modalDesc">Detailed description goes here.</p>
+<div class="flex flex-col gap-sm">
+<button class="bg-primary text-white py-md rounded-xl font-label-md text-label-md font-bold hover:bg-primary/90 transition-all" id="modalAddToCart">Add to Cart</button>
+<a class="bg-green-500 text-white py-md rounded-xl font-label-md text-label-md font-bold hover:bg-green-600 transition-all flex items-center justify-center gap-base" href="" id="modalWaBtn" target="_blank">
+<svg class="w-5 h-5 fill-current" viewbox="0 0 448 512"><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.1 0-65.6-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-5.5-2.8-23.2-8.5-44.2-27.1-16.4-14.6-27.4-32.7-30.6-38.2-3.2-5.5-.3-8.5 2.4-11.2 2.5-2.6 5.5-6.5 8.3-9.7 2.8-3.3 3.7-5.5 5.5-9.2 1.9-3.7 .9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 13.2 5.7 23.5 9.2 31.6 11.8 13.3 4.2 25.4 3.6 35 2.2 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"></path></svg>
+                            Buy on WhatsApp
+                        </a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Location & Contact -->
+<section class="py-xl bg-surface-container-low">
+<div class="max-w-container-max mx-auto px-gutter text-center mb-xl">
+<h2 class="font-headline-lg text-headline-lg text-on-surface mb-md">What Our Customers Say</h2>
+<p class="text-on-surface-variant font-body-md text-body-md max-w-2xl mx-auto">Join hundreds of satisfied families in Narok who trust us for their daily cooking needs.</p>
+</div>
+<div class="max-w-container-max mx-auto px-gutter">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-lg">
+<!-- Testimonial 1 -->
+<div class="bg-surface-container-lowest p-lg rounded-xl shadow-sm border border-outline-variant/20 hover:shadow-md transition-shadow">
+<div class="flex text-primary mb-md">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="text-on-surface-variant italic font-body-md text-body-md mb-lg">"I was skeptical about the 35-minute promise, but they actually arrived in 20 minutes! The delivery team was incredibly professional and even helped me check for leaks."</p>
+<div class="flex items-center gap-md">
+<div class="w-10 h-10 bg-secondary-fixed rounded-full flex items-center justify-center text-secondary font-bold">JK</div>
+<div>
+<p class="font-label-md text-label-md text-on-surface">Jane K.</p>
+<p class="text-caption text-on-surface-variant">Narok CBD</p>
+</div>
+</div>
+</div>
+<!-- Testimonial 2 -->
+<div class="bg-surface-container-lowest p-lg rounded-xl shadow-sm border border-outline-variant/20 hover:shadow-md transition-shadow">
+<div class="flex text-primary mb-md">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="text-on-surface-variant italic font-body-md text-body-md mb-lg">"Finally a gas supplier in Narok that I can trust. The weight is always accurate, and the staff is very friendly. Highly recommended for any household!"</p>
+<div class="flex items-center gap-md">
+<div class="w-10 h-10 bg-primary-fixed rounded-full flex items-center justify-center text-primary font-bold">SM</div>
+<div>
+<p class="font-label-md text-label-md text-on-surface">Samuel M.</p>
+<p class="text-caption text-on-surface-variant">Total Area, Narok</p>
+</div>
+</div>
+</div>
+<!-- Testimonial 3 -->
+<div class="bg-surface-container-lowest p-lg rounded-xl shadow-sm border border-outline-variant/20 hover:shadow-md transition-shadow">
+<div class="flex text-primary mb-md">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="text-on-surface-variant italic font-body-md text-body-md mb-lg">"Super fast service! I ran out of gas while cooking dinner, and Exxon Gas saved the day. Reliable and very convenient payment options through M-Pesa."</p>
+<div class="flex items-center gap-md">
+<div class="w-10 h-10 bg-tertiary-fixed rounded-full flex items-center justify-center text-tertiary font-bold">AL</div>
+<div>
+<p class="font-label-md text-label-md text-on-surface">Alice L.</p>
+<p class="text-caption text-on-surface-variant">Ewaso Nyiro</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section><section class="py-xl bg-surface-container-highest relative overflow-hidden">
+<div class="max-w-container-max mx-auto px-gutter relative z-10">
+<div class="flex flex-col lg:flex-row gap-xl items-center">
+<div class="lg:w-1/2">
+<h2 class="font-headline-lg text-headline-lg mb-md">Visit Us in Narok</h2>
+<p class="text-body-lg text-on-surface-variant mb-xl">Located at the heart of Narok town, we are strategically positioned to serve the entire Narok County with unrivaled speed.</p>
+<div class="space-y-lg">
+<div class="flex gap-md">
+<div class="flex-shrink-0 w-12 h-12 bg-primary rounded-xl flex items-center justify-center text-white">
+<span class="material-symbols-outlined">location_on</span>
+</div>
+<div>
+<h4 class="font-label-md text-label-md text-on-surface">Main Hub Address</h4>
+<p class="text-on-surface-variant">Exxon Gas Depot, Off Narok-Bomet Highway, Narok Town.</p>
+</div>
+</div>
+<div class="flex gap-md">
+<div class="flex-shrink-0 w-12 h-12 bg-primary rounded-xl flex items-center justify-center text-white">
+<span class="material-symbols-outlined">call</span>
+</div>
+<div>
+<h4 class="font-label-md text-label-md text-on-surface">Call for Instant Delivery</h4>
+<p class="text-on-surface-variant">+254 700 000 000 / +254 711 000 000</p>
+</div>
+</div>
+<div class="flex gap-md">
+<div class="flex-shrink-0 w-12 h-12 bg-green-500 rounded-xl flex items-center justify-center text-white shadow-sm">
+<svg class="w-6 h-6 fill-current" viewbox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.1 0-65.6-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-5.5-2.8-23.2-8.5-44.2-27.1-16.4-14.6-27.4-32.7-30.6-38.2-3.2-5.5-.3-8.5 2.4-11.2 2.5-2.6 5.5-6.5 8.3-9.7 2.8-3.3 3.7-5.5 5.5-9.2 1.9-3.7 .9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 13.2 5.7 23.5 9.2 31.6 11.8 13.3 4.2 25.4 3.6 35 2.2 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"></path></svg>
+</div>
+<div>
+<h4 class="font-label-md text-label-md text-on-surface">WhatsApp Us</h4>
+<p class="text-on-surface-variant">+254 711 871765</p>
+</div>
+</div>
+<div class="flex gap-md">
+<div class="flex-shrink-0 w-12 h-12 bg-primary rounded-xl flex items-center justify-center text-white">
+<span class="material-symbols-outlined">schedule</span>
+</div>
+<div>
+<h4 class="font-label-md text-label-md text-on-surface">Operating Hours</h4>
+<p class="text-on-surface-variant">Open Daily: 6:00 AM - 10:00 PM</p>
+</div>
+</div>
+</div></div></div></div></section></body></html>
